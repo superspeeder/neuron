@@ -1,0 +1,9 @@
+cmake-build-*/
+run/
+*.exe
+*.a
+*.o
+*.obj
+*.out
+*.so
+compile_commands.json
