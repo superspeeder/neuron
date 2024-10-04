@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.30)
+cmake_minimum_required(VERSION 3.29)
 project(neuron VERSION 0.1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 23)
@@ -49,7 +49,6 @@ add_library(neuron src/neuron/neuron.cpp src/neuron/neuron.hpp)
 target_include_directories(neuron PUBLIC src/)
 target_include_directories(neuron PRIVATE ${stb_SOURCE_DIR}/)
 target_link_libraries(neuron PUBLIC Vulkan::Vulkan spdlog::spdlog glm::glm shaderc_imp)
-
 
 if (UNIX)
     target_link_libraries(neuron PUBLIC X11 Xcursor Xext Xi Xinerama Xrandr Xss)
